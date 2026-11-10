@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+</head>
+<body>
+
+    <header>
+        <h1>Área de Administração</h1>
+        <p>Meu Cantinho da Leitura</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="admin.html">Login</a></li>
+            <li><a href="cadastro-livros.html">Cadastro de livros</a></li>
+            <li><a href="cadastro-usuarios.html">Cadastro de usuários</a></li>
+            <li><a href="sobre.html">Sobre a autora</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Cadastro de usuários</h2>
+
+            <form action="#" method="post">
+
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                           value="evianialima00@aluno.ifce.edu.br" required>
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div>
+                    <label for="tipo">Tipo de usuário:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="administrador">Administrador</option>
+                        <option value="usuario">Usuário</option>
+                    </select>
+                </div>
+
+                <button type="submit">Cadastrar usuário</button>
+                <button type="reset">Limpar</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Usuários cadastrados</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Maria Eviânia Lima Rabelo</td>
+                        <td>evianialima00@aluno.ifce.edu.br</td>
+                        <td>Administrador</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Apagar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>João da Silva</td>
+                        <td>joao@email.com</td>
+                        <td>Usuário</td>
+                        <td>
+                            <button type="button">Editar</button>
+                            <button type="button">Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Autora: Maria Eviânia Lima Rabelo</p>
+        <a href="sobre.html">Sobre a autora</a>
+    </footer>
+
+</body>
+</html>
